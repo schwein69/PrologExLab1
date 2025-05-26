@@ -3,7 +3,7 @@ geq(zero, zero).
 geq(s(_), zero).
 geq(s(A), s(B)) :- geq(A, B).
 
-% max for standard Prolog lists
+% max for list
 max_list([H|T], Max) :- max_list(T, H, Max).
 
 max_list([], Max, Max).
